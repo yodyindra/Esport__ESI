@@ -29,22 +29,25 @@ import tournament from "../Picture/tournament.svg";
 import squad from "../Picture/squad.svg";
 import leaderboard from "../Picture/leaderboard.svg";
 import profile from "../Picture/profile.svg";
-import MyOwlCarousel from "../HompageOwlCarousel";
+import MyOwlCarousel from "./HompageOwlCarousel";
 
-const height1 = {
-  height: 10
+const width1 = {
+  width: 10
 };
-const height2 = {
-  height: 20
+const width2 = {
+  width: 20
 };
-const height3 = {
-  height: 30
+const width3 = {
+  width: 30
 };
-const height4 = {
-  height: 40
+const width4 = {
+  width: 40
 };
-const height5 = {
-  height: 50
+const width5 = {
+  width: 50
+};
+const width8 = {
+  width: 80
 };
 
 function Homepage() {
@@ -69,12 +72,12 @@ function Homepage() {
                   </h5>
                 </div>
                 <div className="d-flex flex-row">
-                  <div style={height3}>
-                    <img src={wallet} alt="wallet" />
+                  <div>
+                    <img src={wallet} alt="wallet" style={width4} />
                   </div>
 
-                  <img src={notif} alt="notif" style={height3} />
-                  <img src={charles} alt="charles" style={height3} />
+                  <img src={notif} alt="notif" style={width4} />
+                  <img src={charles} alt="charles" style={width5} />
                 </div>
               </div>
             </div>
@@ -116,7 +119,7 @@ function Homepage() {
                     Space Squad
                   </h4>
                 </div>
-                <img src={qr} alt="qr" style={{ width: "40" }} />
+                <img src={qr} alt="qr" className="qr" style={width4} />
               </div>
             </div>
           </div>
@@ -131,30 +134,25 @@ function Homepage() {
                       style={{ width: "50" }}
                     />
                     <div className="ml-3 mr-4">
-                      <h5 className="card-title">
+                      <h5 className="text-left card-title">
                         Space Squad
                         <img
                           src={verifiedBlue}
                           alt="verifiedBlue"
-                          className="ml-2"
-                          style={{ width: "22" }}
+                          className="text-left ml-2"
+                          style={width2}
                         />
                       </h5>
                       <h6 className="card-subtitle mb-1 text-muted">
                         Squad
-                        <div style={{ width: 5 }}>
-                          <img src={dot} alt="dot" />
+                        <div>
+                          <img src={dot} alt="dot" style={width1} />
                         </div>
                         Mobile Legend
                       </h6>
                     </div>
                   </div>
-                  <img
-                    className="ml-2"
-                    src={more}
-                    alt="more"
-                    style={{ height: "3" }}
-                  />
+                  <img className="mr-0" src={more} alt="more" style={width4} />
                 </div>
               </div>
             </div>
@@ -174,22 +172,17 @@ function Homepage() {
               <div className="card" style={{ backgroundColor: "#f3001f" }}>
                 <div className="card-body d-flex flex-row justify-content-between">
                   <div className="d-flex flex-row">
-                    <img
-                      src={rankUp}
-                      alt=""
-                      style={{ width: 40 }}
-                      className="mr-1"
-                    />
+                    <img src={rankUp} alt="" style={width4} className="mr-1" />
                     <img
                       src="./Picture/2000.svg"
                       alt=""
-                      style={{ width: 40 }}
+                      style={width4}
                       className="mr-4"
                     />
                     <img
                       src={spaceSquad}
                       alt="spaceSquad"
-                      style={{ width: 90 }}
+                      style={width8}
                       className="mr-2"
                     />
                     <div className="mt-3">
@@ -255,7 +248,7 @@ function Homepage() {
                   <img
                     src={squidSquad}
                     alt="squidSquad"
-                    style={{ width: 90 }}
+                    style={{ width: 80 }}
                   />
                   <div className="mt-3 ml-3">
                     <h5 className="card-title">
@@ -264,7 +257,7 @@ function Homepage() {
                         src={verifiedBlue}
                         alt="verifiedBlue"
                         className="ml-2"
-                        style={{ width: 22 }}
+                        style={width1}
                       />
                     </h5>
                     <h6
@@ -288,7 +281,7 @@ function Homepage() {
                   <img
                     src={rankSame}
                     alt="rankSame"
-                    style={{ width: 10 }}
+                    style={width1}
                     className="ml-3 mr-3"
                   />
                   <img
@@ -297,7 +290,7 @@ function Homepage() {
                     style={{ width: 40 }}
                     className="mr-4"
                   />
-                  <img src={sikoSquad} alt="sikoSquad" style={{ width: 90 }} />
+                  <img src={sikoSquad} alt="sikoSquad" style={{ width: 80 }} />
                   <div className="mt-3 ml-3">
                     <h5 className="card-title">
                       Siko Squad
@@ -341,7 +334,7 @@ function Homepage() {
                   <img
                     src={kapakSquad}
                     alt="kapakSquad"
-                    style={{ width: 90 }}
+                    style={{ width: 80 }}
                   />
                   <div className="mt-3 ml-3">
                     <h5 className="card-title">
@@ -372,27 +365,27 @@ function Homepage() {
               <div className="card-body">
                 <div className="col-md-10 mx-auto d-flex flex-row justify-content-between">
                   <a href="">
-                    <img src={homeRed} alt="homeRed" style={{ height: 100 }} />
+                    <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
                   </a>
                   <a href="">
                     <img
                       src={tournament}
                       alt="tournament"
-                      style={{ height: 100 }}
+                      style={{ height: 40 }}
                     />
                   </a>
                   <a href="">
-                    <img src={squad} alt="squad" style={{ height: 100 }} />
+                    <img src={squad} alt="squad" style={{ height: 40 }} />
                   </a>
                   <a href="">
                     <img
                       src={leaderboard}
                       alt="leaderboard"
-                      style={{ height: 100 }}
+                      style={{ height: 40 }}
                     />
                   </a>
                   <a href="">
-                    <img src={profile} alt="profile" style={{ height: 100 }} />
+                    <img src={profile} alt="profile" style={{ height: 40 }} />
                   </a>
                 </div>
               </div>

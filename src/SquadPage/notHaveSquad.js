@@ -1,4 +1,4 @@
-// import "./homePage.css";
+import "./notHaveSquad.css";
 import notif from "../Picture/notification.svg";
 import verifiedBlue from "../Picture/verified-blue.svg";
 import squidSquad from "../Picture/squid-squad.svg";
@@ -255,35 +255,27 @@ function NotHaveSquad() {
                 <div class="navs col-md-6 mx-auto">
                   <div class="col-md-10 mx-auto d-flex flex-row justify-content-between">
                     <a href="">
-                      <img
-                        src={homeRed}
-                        alt="homeRed"
-                        style={{ height: "15%" }}
-                      />
+                      <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
                     </a>
                     <a href="">
                       <img
                         src={tournament}
                         alt="tournament"
-                        style={{ height: "15%" }}
+                        style={{ height: 40 }}
                       />
                     </a>
                     <a href="">
-                      <img src={squad} alt="squad" style={{ height: "15%" }} />
+                      <img src={squad} alt="squad" style={{ height: 40 }} />
                     </a>
                     <a href="">
                       <img
                         src={leaderboard}
                         alt="leaderboard"
-                        style={{ height: "15%" }}
+                        style={{ height: 40 }}
                       />
                     </a>
                     <a href="">
-                      <img
-                        src={profile}
-                        alt="profile"
-                        style={{ height: "15%" }}
-                      />
+                      <img src={profile} alt="profile" style={{ height: 40 }} />
                     </a>
                   </div>
                 </div>

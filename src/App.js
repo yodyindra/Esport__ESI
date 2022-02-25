@@ -14,7 +14,7 @@ import NotHaveSquad from "./SquadPage/notHaveSquad";
 export default function App() {
   return (
     <div className="App">
-      <Homepage />
+      <NotHaveSquad />
       {/* <Routes>
         <Route path="/" element={<Loading/>} />
         <Route path="/" element={<OpeningScreen1 />} />
