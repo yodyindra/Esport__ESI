@@ -10,14 +10,13 @@ import PhoneConfirmation from "./Register/phoneConfirmation";
 import PhoneConfirmationFail from "./Register/phoneConfirmationFail";
 import Homepage from "./Homepage/homePage";
 import NotHaveSquad from "./SquadPage/notHaveSquad";
-import MyOwlCarousel from "./OwlCarousel";
 
 export default function App() {
   return (
     <div className="App">
       <Homepage />
-      <Routes>
-        {/* <Route path="/" element={<Loading/>} /> */}
+      {/* <Routes>
+        <Route path="/" element={<Loading/>} />
         <Route path="/" element={<OpeningScreen1 />} />
         <Route path="/open2" element={<OpeningScreen2 />} />
         <Route path="/open3" element={<OpeningScreen3 />} />
@@ -28,7 +27,7 @@ export default function App() {
           path="/phone-confirmation-fail"
           element={<PhoneConfirmationFail />}
         />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }

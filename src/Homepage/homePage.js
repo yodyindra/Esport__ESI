@@ -29,16 +29,8 @@ import tournament from "../Picture/tournament.svg";
 import squad from "../Picture/squad.svg";
 import leaderboard from "../Picture/leaderboard.svg";
 import profile from "../Picture/profile.svg";
-import MyOwlCarousel from "../OwlCarousel";
+import MyOwlCarousel from "../HompageOwlCarousel";
 
-// const MyOwlCarousel = () => {
-//   Option = {
-//     loop: true,
-//     margin: 10,
-//     items: 1,
-//     autoplay: true
-//   };
-// };
 const height1 = {
   height: 10
 };
@@ -69,16 +61,20 @@ function Homepage() {
             <div className="col-md-6 mx-auto">
               <div className="d-flex flex-row mx-auto justify-content-between">
                 <div>
-                  <h2 style={{ color: "#ffffff" }}>Hai, Charles</h2>
-                  <h5 style={{ color: "#ffffff" }}>Selamat datang!</h5>
+                  <h2 className="text-left" style={{ color: "#ffffff" }}>
+                    Hai, Charles
+                  </h2>
+                  <h5 className="text-left" style={{ color: "#ffffff" }}>
+                    Selamat datang!
+                  </h5>
                 </div>
                 <div className="d-flex flex-row">
-                  <div style={{ height: "30px" }}>
+                  <div style={height3}>
                     <img src={wallet} alt="wallet" />
                   </div>
 
                   <img src={notif} alt="notif" style={height3} />
-                  <img src={charles} alt="charles" style={height2} />
+                  <img src={charles} alt="charles" style={height3} />
                 </div>
               </div>
             </div>
@@ -170,151 +166,6 @@ function Homepage() {
                 <a href="/register">Lihat semua</a>
               </div>
               <MyOwlCarousel />
-              {/* <OwlCarousel className="owl-theme" {...Option}>
-                <div className="item">
-                  <img
-                    src="https://d2rdb56lmj4es2.cloudfront.net/data/photo/2019/3/28/0328194-2590-FCBD-5A4FCA54E307E0AB.jpg"
-                    alt="road"
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="https://d2rdb56lmj4es2.cloudfront.net/data/photo/2019/2/18/0218196-2590-FCBD-5AA19539BBCE5DDF.jpg"
-                    alt="sunrise"
-                  />
-                </div>
-                <div className="item">
-                  <img
-                    src="https://d2rdb56lmj4es2.cloudfront.net/data/photo/2019/3/28/0328192-2590-FCBD-5A018FCFA66A0706.jpg"
-                    alt="road2"
-                  />
-                </div>
-              </OwlCarousel> */}
-              {/* <div className="owl-carousel owl-theme">
-                <div className="item card">
-                  <div className="card-body d-flex flex-row">
-                    <img src={pubg} alt="pubg" style={{ width: 100 }} />
-                    <div>
-                      <div className="ml-3 mb-3 d-flex flex-row">
-                        <div>
-                          <h5 className="card-title">Piala Walikota Cup</h5>
-                          <h6 className="card-subtitle mb-1 text-muted">
-                            Pemerintah Kota Denpasar
-                          </h6>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn ml-3"
-                          style={{
-                            backgroundColor: "#44c616",
-                            color: "#ffffff"
-                          }}
-                        >
-                          Buka
-                        </button>
-                      </div>
-                      <div className="d-flex flex-row">
-                        <img
-                          className="ml-3"
-                          src={dollar}
-                          alt="dollar"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">Rp. 100.000.000</a>
-                        <img
-                          className="ml-3"
-                          src={people}
-                          alt="people"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">25/50 Tim</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item card">
-                  <div className="card-body d-flex flex-row">
-                    <img src={pubg} alt="pubg" style={{ width: 100 }} />
-                    <div>
-                      <div className="ml-3 mb-3 d-flex flex-row">
-                        <div>
-                          <h5 className="card-title">Piala Walikota Cup</h5>
-                          <h6 className="card-subtitle mb-1 text-muted">
-                            Pemerintah Kota Denpasar
-                          </h6>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn ml-3"
-                          style={{
-                            backgroundColor: "#44c616",
-                            color: "#ffffff"
-                          }}
-                        >
-                          Buka
-                        </button>
-                      </div>
-                      <div className="d-flex flex-row">
-                        <img
-                          className="ml-3"
-                          src={dollar}
-                          alt="dollar"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">Rp. 100.000.000</a>
-                        <img
-                          className="ml-3"
-                          src={people}
-                          alt="people"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">25/50 Tim</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="item card">
-                  <div className="card-body d-flex flex-row">
-                    <img src={pubg} alt="pubg" style={{ width: 100 }} />
-                    <div>
-                      <div className="ml-3 mb-3 d-flex flex-row">
-                        <div>
-                          <h5 className="card-title">Piala Walikota Cup</h5>
-                          <h6 className="card-subtitle mb-1 text-muted">
-                            Pemerintah Kota Denpasar
-                          </h6>
-                        </div>
-                        <button
-                          type="button"
-                          className="btn ml-3"
-                          style={{
-                            backgroundColor: "#44c616",
-                            color: "#ffffff"
-                          }}
-                        >
-                          Buka
-                        </button>
-                      </div>
-                      <div className="d-flex flex-row">
-                        <img
-                          className="ml-3"
-                          src={dollar}
-                          alt="dollar"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">Rp. 100.000.000</a>
-                        <img
-                          className="ml-3"
-                          src={people}
-                          alt="people"
-                          style={{ width: 25 }}
-                        />
-                        <a href="#">25/50 Tim</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </div>
           <div>
