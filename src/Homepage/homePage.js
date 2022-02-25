@@ -145,7 +145,10 @@ function Homepage() {
                         />
                       </h5>
                       <h6 className="card-subtitle mb-1 text-muted">
-                        Squad <img src={dot} alt="dot" style={{ width: "5" }} />
+                        Squad
+                        <div style={{ width: 5 }}>
+                          <img src={dot} alt="dot" />
+                        </div>
                         Mobile Legend
                       </h6>
                     </div>

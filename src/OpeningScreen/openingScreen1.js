@@ -31,7 +31,7 @@ function OpeningScreen1() {
         <div class="col-sm-12">
           <div class="content">
             <div className="text-right mt-4 mb-4">
-              <b>SKIP</b>
+              -/*<b>SKIP</b>\+
             </div>
             <br />
             <div className="wrapper">
