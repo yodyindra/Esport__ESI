@@ -10,11 +10,13 @@ import PhoneConfirmation from "./Register/phoneConfirmation";
 import PhoneConfirmationFail from "./Register/phoneConfirmationFail";
 import Homepage from "./Homepage/homePage";
 import NotHaveSquad from "./SquadPage/notHaveSquad";
+import HaveSquad from "./SquadPage/haveSquad";
 
 export default function App() {
   return (
     <div className="App">
-      <NotHaveSquad />
+      <HaveSquad />
+      <Homepage />
       {/* <Routes>
         <Route path="/" element={<Loading/>} />
         <Route path="/" element={<OpeningScreen1 />} />

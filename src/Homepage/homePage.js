@@ -73,10 +73,10 @@ function Homepage() {
                 </div>
                 <div className="d-flex flex-row">
                   <div>
-                    <img src={wallet} alt="wallet" style={width4} />
+                    <img src={wallet} alt="wallet" style={width3} />
                   </div>
 
-                  <img src={notif} alt="notif" style={width4} />
+                  <img src={notif} alt="notif" style={width3} />
                   <img src={charles} alt="charles" style={width5} />
                 </div>
               </div>
