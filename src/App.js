@@ -11,10 +11,12 @@ import PhoneConfirmationFail from "./Register/phoneConfirmationFail";
 import Homepage from "./Homepage/homePage";
 import NotHaveSquad from "./SquadPage/notHaveSquad";
 import HaveSquad from "./SquadPage/haveSquad";
+// import LoginScreen from "./Login/loginScreen";
 
 export default function App() {
   return (
     <div className="App">
+      {/* <LoginScreen /> */}
       <HaveSquad />
       <Homepage />
       {/* <Routes>
