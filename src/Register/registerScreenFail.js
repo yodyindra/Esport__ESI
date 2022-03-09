@@ -5,8 +5,8 @@ function RegisterScreenFail() {
   return (
     <>
       <main>
-        <div class="col-sm-6 mx-auto mt-4">
-          <div class="content">
+        <div className="col-sm-6 mx-auto mt-4">
+          <div className="content">
             <h2>
               <b>Daftar</b>
             </h2>

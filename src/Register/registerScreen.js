@@ -11,7 +11,7 @@ function RegisterScreen() {
               <b>Daftar</b>
             </h2>
             <h5 className="text-left">
-              Sudah memiliki akun? <a href="#">Masuk</a>
+              Sudah memiliki akun? <Link to="/login">Masuk</Link>
             </h5>
             <p>*Wajib diisi</p>
             <form>
@@ -89,9 +89,11 @@ function RegisterScreen() {
                   id="check"
                 />
                 <label className="form-check-label" for="check">
-                  Saya menyetujui <a href="#">syarat</a>,{" "}
-                  <a href="#">ketentuan</a>, dan <a href="#">privasi</a>{" "}
-                  ESI-Esport
+                  Saya menyetujui{" "}
+                  <Link to="/terms-condition">
+                    syarat, ketentuan, dan privasi
+                  </Link>
+                  &nbsp; ESI-Esport
                 </label>
               </div>
             </form>
@@ -99,7 +101,7 @@ function RegisterScreen() {
         </div>
       </main>
       <nav className="text-center">
-        <Link to="/register-failed">
+        <Link to="/login">
           <button style={{ margin: 10 }}>DAFTAR</button>
         </Link>
       </nav>

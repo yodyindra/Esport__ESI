@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./notHaveSquad.css";
 import notif from "../Picture/notification.svg";
 import verifiedBlue from "../Picture/verified-blue.svg";

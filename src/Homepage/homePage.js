@@ -1,4 +1,5 @@
 import "./homePage.css";
+import { Link } from "react-router-dom";
 import React from "react";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -56,7 +57,7 @@ function Homepage() {
       <>
         <main>
           <div
-            className="contain col-md-12 content mx-auto"
+            className="contain__homepage content__homepage col-md-12  mx-auto"
             style={{
               backgroundColor: "#f3001f"
             }}
@@ -72,10 +73,7 @@ function Homepage() {
                   </h5>
                 </div>
                 <div className="d-flex flex-row">
-                  <div>
-                    <img src={wallet} alt="wallet" style={width3} />
-                  </div>
-
+                  <img src={wallet} alt="wallet" style={width3} />
                   <img src={notif} alt="notif" style={width3} />
                   <img src={charles} alt="charles" style={width5} />
                 </div>
@@ -84,7 +82,7 @@ function Homepage() {
           </div>
           <div className="col-md-6 mx-auto">
             <div
-              className="card1 card"
+              className="card1__homepage card"
               style={{
                 background:
                   "linear-gradient(136.62deg, #f3001f -2.2%, #a8091e 102.22%)",
@@ -282,7 +280,7 @@ function Homepage() {
                     src={rankSame}
                     alt="rankSame"
                     style={width1}
-                    className="ml-3 mr-3"
+                    className="ml-3 mr-3s"
                   />
                   <img
                     src={rank2}
@@ -374,9 +372,9 @@ function Homepage() {
                       style={{ height: 40 }}
                     />
                   </a>
-                  <a href="">
+                  <Link to="/have-squad">
                     <img src={squad} alt="squad" style={{ height: 40 }} />
-                  </a>
+                  </Link>
                   <a href="">
                     <img
                       src={leaderboard}

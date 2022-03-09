@@ -1,4 +1,5 @@
 import "../Login/loginScreen.css";
+import { Link } from "react-router-dom";
 import facebook from "../img/facebook.svg";
 import google from "../img/google.svg";
 
@@ -32,7 +33,7 @@ function loginScreen() {
                 <b>Masuk</b>
               </h1>
               <h2>
-                Belum memiliki akun? <a href="#">Daftar</a>
+                Belum memiliki akun? <Link to="/register">Daftar</Link>
               </h2>
               <form>
                 <div class="form-group">
@@ -58,11 +59,11 @@ function loginScreen() {
                 <a href="">Lupa Kata Sandi?</a>
               </div>
 
-              <a href="" class="nav-link">
-                <button type="button" class="btn1 mt-3">
-                  <b>MASUK</b>
-                </button>
-              </a>
+              <nav className="text-center">
+                <Link to="/homepage">
+                  <button style={{ margin: 10 }}>NEXT</button>
+                </Link>
+              </nav>
 
               <div class="mt-3 mb-3">
                 <h3>Atau masuk menggunakan</h3>

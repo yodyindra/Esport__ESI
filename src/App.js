@@ -12,26 +12,30 @@ import Homepage from "./Homepage/homePage";
 import NotHaveSquad from "./SquadPage/notHaveSquad";
 import HaveSquad from "./SquadPage/haveSquad";
 import LoginScreen from "./Login/loginScreen";
+import TermsCondition from "./Register/termsCondition";
 
 export default function App() {
   return (
     <div className="App">
-      <LoginScreen />
-      <HaveSquad />
-      <Homepage />
-      {/* <Routes>
-        <Route path="/" element={<Loading/>} />
+      {/* <HaveSquad /> */}
+      {/* <Homepage /> */}
+      <Routes>
+        {/* <Route path="/" element={<Loading/>} /> */}
         <Route path="/" element={<OpeningScreen1 />} />
         <Route path="/open2" element={<OpeningScreen2 />} />
         <Route path="/open3" element={<OpeningScreen3 />} />
+        <Route path="/login" element={<LoginScreen />} />
         <Route path="/register" element={<RegisterScreen />} />
         <Route path="/register-failed" element={<RegisterScreenFail />} />
+        <Route path="/homepage" element={<Homepage />} />
         <Route path="/phone-confirmation" element={<PhoneConfirmation />} />
+        <Route path="/terms-condition" element={<TermsCondition />} />
         <Route
           path="/phone-confirmation-fail"
           element={<PhoneConfirmationFail />}
         />
-      </Routes> */}
+        <Route path="/have-squad" element={<HaveSquad />} />
+      </Routes>
     </div>
   );
 }

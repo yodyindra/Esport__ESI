@@ -50,7 +50,7 @@ function OpeningScreen3() {
         <h5 className="text-center">Find and win various esport tournament</h5>
       </main>
       <nav className="text-center">
-        <Link to="/register">
+        <Link to="/login">
           <button style={{ margin: 7 }}>
             <div>GET&nbsp;STARTED</div>
           </button>
