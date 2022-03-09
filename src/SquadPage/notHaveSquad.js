@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./notHaveSquad.css";
+import OwlCarouselSquadPage from "./squadPageOwlCarousel";
 import notif from "../Picture/notification.svg";
 import verifiedBlue from "../Picture/verified-blue.svg";
 import squidSquad from "../Picture/squid-squad.svg";
@@ -29,13 +30,13 @@ function NotHaveSquad() {
           >
             <div class="col-md-6 mx-auto">
               <div class="d-flex flex-row mx-auto justify-content-between mb-5">
-                <a href="">
+                <Link to="/homepage">
                   <img
                     src={chevronLeft}
                     alt="chevronLeft"
                     style={{ height: "40px" }}
                   />
-                </a>
+                </Link>
                 <h4 style={{ color: "#ffffff" }}>Squad</h4>
                 <a href="">
                   <img src={notif} alt="notif" style={{ height: "35px" }} />
@@ -85,38 +86,7 @@ function NotHaveSquad() {
                 }}
               />
             </div>
-            <div class="mt-4 owl-carousel owl-theme text-center">
-              <button
-                class="btn"
-                style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-              >
-                Mobile&nbsp;Legend
-              </button>
-              <button
-                class="btn"
-                style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-              >
-                PUBG
-              </button>
-              <button
-                class="btn"
-                style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-              >
-                Free&nbsp;Fire
-              </button>
-              <button
-                class="btn"
-                style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-              >
-                Point&nbsp;Blank
-              </button>
-              <button
-                class="btn"
-                style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-              >
-                Lainnya
-              </button>
-            </div>
+            <OwlCarouselSquadPage />
           </div>
           <div class="col-md-6 mx-auto mt-5">
             <div class="d-flex flex-row justify-content-between">
@@ -265,9 +235,9 @@ function NotHaveSquad() {
                         style={{ height: 40 }}
                       />
                     </a>
-                    <a href="">
+                    <Link to="/have-squad">
                       <img src={squad} alt="squad" style={{ height: 40 }} />
-                    </a>
+                    </Link>
                     <a href="">
                       <img
                         src={leaderboard}

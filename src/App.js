@@ -13,6 +13,11 @@ import NotHaveSquad from "./SquadPage/notHaveSquad";
 import HaveSquad from "./SquadPage/haveSquad";
 import LoginScreen from "./Login/loginScreen";
 import TermsCondition from "./Register/termsCondition";
+import ForgotPassword from "./ForgotPassword/forgotPassword";
+import EmailNotify from "./ForgotPassword/emailNotify";
+import CreateNewPassword from "./ForgotPassword/createNewPassword";
+import InputCode from "./ForgotPassword/inputCode";
+import EmailNotify2 from "./ForgotPassword/emailNotify2";
 
 export default function App() {
   return (
@@ -34,7 +39,13 @@ export default function App() {
           path="/phone-confirmation-fail"
           element={<PhoneConfirmationFail />}
         />
+        <Route path="/not-have-squad" element={<NotHaveSquad />} />
         <Route path="/have-squad" element={<HaveSquad />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/email-notify" element={<EmailNotify />} />
+        <Route path="/input-code" element={<InputCode />} />
+        <Route path="/create-password" element={<CreateNewPassword />} />
+        <Route path="/email-notify2" element={<EmailNotify2 />} />
       </Routes>
     </div>
   );
