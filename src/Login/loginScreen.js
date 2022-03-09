@@ -71,7 +71,7 @@ function loginScreen() {
               <div class="d-flex flex-row justify-content-center mt-3 ">
                 <a href="">
                   <button type="button" class="btn btn_4">
-                    <img src={facebook} style={width4} />
+                    <img src={facebook} />
                     Facebook
                   </button>
                 </a>
@@ -79,7 +79,7 @@ function loginScreen() {
                   <button type="button" class="btn btn_5 ml-3">
                     <img src={google} /> Google
                   </button>
-                </a>{" "}
+                </a>
               </div>
             </div>
           </div>
