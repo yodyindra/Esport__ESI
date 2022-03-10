@@ -14,6 +14,7 @@ import tournament from "../Picture/tournament.svg";
 import squad from "../Picture/squad.svg";
 import leaderboard from "../Picture/leaderboard.svg";
 import profile from "../Picture/profile.svg";
+import OwlCarouselSquadPage from "./squadPageOwlCarousel";
 
 function HaveSquad() {
   return (
@@ -22,23 +23,23 @@ function HaveSquad() {
         <main>
           {/* Awal Banner */}
           <div class="col-md-12 content mx-auto konten">
-            <div class="col-md-8 mx-auto ">
+            <div class="col-md-6 mx-auto ">
               <div class="d-flex flex-row mx-auto justify-content-between mb-5">
                 <Link to="/homepage">
-                  <img src={left} />
+                  <img src={left} alt="left" />
                 </Link>
                 <h1>Squad</h1>
-                <a href="">
-                  <img src={notification} />
-                </a>
+                <Link to="">
+                  <img src={notification} alt="notif" />
+                </Link>
               </div>
               <center>
-                <img src={dadu} className="img1" />
+                <img src={dadu} alt="" className="img1" />
               </center>
               <div class="mt-5 text-center">
                 <h2 class="ml-3 mb-5">
                   Squid Squad
-                  <img src={centangbiru} class="img2 ml-2" />
+                  <img src={centangbiru} alt="" class="img2 ml-2" />
                 </h2>
                 <h3 class="mb-5">ID4R2632379</h3>
               </div>
@@ -54,29 +55,29 @@ function HaveSquad() {
           {/* Akhir Banner */}
           {/* Info Panel */}
           <div class="row justify-content-center">
-            <div class="col-10 konten1">
+            <div class="col-6 konten1">
               <div class="row ">
                 <div class="col">
                   <center>
-                    <a href="">
-                      <img src={people} />
-                    </a>
+                    <Link to="">
+                      <img src={people} alt="" />
+                    </Link>
                   </center>
                   <h1>Anggota</h1>
                 </div>
                 <div class="col">
                   <center>
-                    <a href="">
-                      <img src={fatrows} />
-                    </a>
+                    <Link to="">
+                      <img src={fatrows} alt="" />
+                    </Link>
                   </center>
                   <h1>Statistik</h1>
                 </div>
                 <div class="col">
                   <center>
-                    <a href="">
-                      <img src={logout} />
-                    </a>
+                    <Link to="">
+                      <img src={logout} alt="" />
+                    </Link>
                   </center>
                   <h1>Keluar</h1>
                 </div>
@@ -85,7 +86,7 @@ function HaveSquad() {
           </div>
           {/* Akhir Info Panel */}
           {/* Awal Search */}
-          <div class=" col-md-9 mx-auto konten2">
+          <div class=" col-md-6 mx-auto konten2">
             <div class="d-flex flex-row justify-content-between">
               <div>
                 <div class="mt-3">
@@ -96,46 +97,18 @@ function HaveSquad() {
                 </div>
               </div>
               <a href="">
-                <img src={search} className="img1" />
+                <img src={search} alt="" className="img1" />
               </a>
             </div>
           </div>
           {/* Akhir Search */}
           {/* Button */}
-          <div class="col-md-12 content mx-auto  ">
-            <div class="col-md-8 mx-auto ">
-              <div class="d-flex flex-row mx-auto justify-content-between mb-5">
-                <a href="">
-                  <button type="button" class="btn btn konten3_btn">
-                    Mobile&nbsp;Legend
-                  </button>
-                </a>
-                <a href="">
-                  <button type="button" class="btn btn konten3_btn ml-3">
-                    PUBG
-                  </button>
-                </a>
-                <a href="">
-                  <button type="button" class="btn btn konten3_btn">
-                    Free&nbsp;Fire
-                  </button>
-                </a>
-                <a href="">
-                  <button type="button" class="btn btn konten3_btn">
-                    Point&nbsp;Blank
-                  </button>
-                </a>
-                <a href="">
-                  <button type="button" class="btn btn konten3_btn">
-                    Lainnya
-                  </button>
-                </a>
-              </div>
-            </div>
+          <div class=" col-md-6 mx-auto">
+            <OwlCarouselSquadPage />
           </div>
           {/* Akhir Button */}
           {/* Sparing */}
-          <div class="col-md-8 mx-auto mt-5 konten3">
+          <div class="col-md-6 mx-auto mt-5 konten3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img src={foto1} class="img2" />
@@ -151,7 +124,7 @@ function HaveSquad() {
             </div>
           </div>
 
-          <div class="col-md-8 mx-auto mt-5 konten3">
+          <div class="col-md-6 mx-auto mt-5 konten3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img src={foto1} class="img2" />
@@ -167,7 +140,7 @@ function HaveSquad() {
             </div>
           </div>
 
-          <div class="col-md-8 mx-auto mt-5 konten3">
+          <div class="col-md-6 mx-auto mt-5 konten3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img src={foto1} class="img2" />
@@ -183,7 +156,7 @@ function HaveSquad() {
             </div>
           </div>
 
-          <div class="col-md-8 mx-auto mt-5 konten3">
+          <div class="col-md-6 mx-auto mt-5 konten3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img src={foto1} class="img2" />
@@ -199,7 +172,7 @@ function HaveSquad() {
             </div>
           </div>
 
-          <div class="col-md-8 mx-auto mt-5 konten3">
+          <div class="col-md-6 mx-auto mt-5 konten3">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img src={foto1} class="img2" />
@@ -225,10 +198,10 @@ function HaveSquad() {
           </div>
           {/* Akhir squad lain */}
 
-          <div className="navs col-md-6 mx-auto mt-2">
+          <div className="navs 8 mx-auto mt-2">
             <div className="card">
               <div className="card-body">
-                <div className="col-md-10 mx-auto d-flex flex-row justify-content-between">
+                <div className="col-md-6 mx-auto d-flex flex-row justify-content-between">
                   <Link to="/homepage">
                     <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
                   </Link>

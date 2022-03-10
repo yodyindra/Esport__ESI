@@ -21,7 +21,7 @@ const height5 = {
 
 const OwlCarouselSquadPage = () => {
   const options = {
-    loop: true,
+    loop: false,
     items: 1,
     dots: false,
     autoplay: true,
@@ -29,46 +29,55 @@ const OwlCarouselSquadPage = () => {
       0: {
         items: 1
       },
-      768: {
+      320: {
         items: 2
+      },
+      768: {
+        items: 3
       }
     }
   };
   return (
     <OwlCarousel className="owl-theme" {...options}>
       <div className="item">
-        <div class="mt-4 owl-carousel owl-theme text-center">
-          <button
-            class="btn"
-            style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-          >
-            Mobile&nbsp;Legend
-          </button>
-          <button
-            class="btn"
-            style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-          >
-            PUBG
-          </button>
-          <button
-            class="btn"
-            style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-          >
-            Free&nbsp;Fire
-          </button>
-          <button
-            class="btn"
-            style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-          >
-            Point&nbsp;Blank
-          </button>
-          <button
-            class="btn"
-            style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
-          >
-            Lainnya
-          </button>
-        </div>
+        <button
+          class="btn"
+          style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
+        >
+          Mobile&nbsp;Legend
+        </button>
+      </div>
+      <div className="item">
+        <button
+          class="btn"
+          style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
+        >
+          PUBG
+        </button>
+      </div>
+      <div className="item">
+        <button
+          class="btn"
+          style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
+        >
+          Free&nbsp;Fire
+        </button>
+      </div>
+      <div className="item">
+        <button
+          class="btn"
+          style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
+        >
+          Point&nbsp;Blank
+        </button>
+      </div>
+      <div className="item">
+        <button
+          class="btn"
+          style={{ backgroundColor: "#f1f2f6", borderRadius: "16px" }}
+        >
+          Lainnya
+        </button>
       </div>
     </OwlCarousel>
   );

@@ -28,9 +28,11 @@ function OpeningScreen2() {
   return (
     <>
       <main>
-        <div className="text-right mt-4 mb-4">
-          <b>SKIP</b>
-        </div>
+        <Link to="/login">
+          <div className="text-right mt-4 mb-4">
+            <b>SKIP</b>
+          </div>
+        </Link>
         <br />
         <div className="wrapper">
           <div>

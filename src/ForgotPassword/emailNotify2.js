@@ -1,3 +1,4 @@
+import "./forgotPassword.css";
 import { Link } from "react-router-dom";
 import success from "../img/Success.svg";
 
@@ -19,8 +20,8 @@ function EmailNotify2() {
               ke halaman Login
             </h5>
             <Link to="/login" class="nav-link">
-              <button type="button" class="btn1 mt-3">
-                <b>KEMBALI KE HALAMAN LOGIN</b>
+              <button type="button" class="mt-3">
+                <b>KEMBALI&nbsp;KE&nbsp;HALAMAN&nbsp;LOGIN</b>
               </button>
             </Link>
           </div>

@@ -1,3 +1,4 @@
+import "./forgotPassword.css";
 import { Link } from "react-router-dom";
 
 function CreateNewPassword() {
@@ -10,9 +11,9 @@ function CreateNewPassword() {
               <h1>
                 <b>Buat Kata Sandi Baru</b>
               </h1>
-              <h2>
-                Belum memiliki akun? <Link to="#">Daftar</Link>
-              </h2>
+              <h4>
+                Belum memiliki akun? <Link to="/register">Daftar</Link>
+              </h4>
               <form>
                 <div className="form-group">
                   <label for="inputPass" className="mt-3 mb-3">
@@ -37,11 +38,11 @@ function CreateNewPassword() {
                 </div>
               </form>
 
-              <a href="email-notify2" className="nav-link">
-                <button type="button" className="btn1 mt-3">
-                  <b>ATUR KATA SANDI</b>
+              <Link to="/email-notify2">
+                <button type="button" className="mt-3">
+                  <b>ATUR&nbsp;KATA&nbsp;SANDI</b>
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

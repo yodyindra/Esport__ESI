@@ -1,3 +1,4 @@
+import "./forgotPassword.css";
 import { Link } from "react-router-dom";
 import emailNotif from "../img/emailnotif.svg";
 
@@ -19,7 +20,7 @@ function EmailNotify() {
             </h5>
             <Link to="/input-code">
               <button type="button" className="btn1 mt-3">
-                <b>MASUKAN KODE</b>
+                <b>MASUKAN&nbsp;KODE</b>
               </button>
             </Link>
             <Link to="/forgot-password">

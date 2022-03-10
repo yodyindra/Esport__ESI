@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -65,14 +66,14 @@ const MyOwlCarousel = () => {
               </div>
               <div className="d-flex flex-row">
                 <img src={dollar} alt="dollar" style={height3} />
-                <a href="#">Rp100.000.000</a>
+                <Link to="#">Rp100.000.000</Link>
                 <img
                   className="ml-3"
                   src={people}
                   alt="people"
                   style={height3}
                 />
-                <a href="#">25/50 Tim</a>
+                <Link to="#">25/50 Tim</Link>
               </div>
             </div>
           </div>
@@ -108,14 +109,14 @@ const MyOwlCarousel = () => {
                   alt="dollar"
                   style={height3}
                 />
-                <a href="#">Rp100.000.000</a>
+                <Link to="#">Rp100.000.000</Link>
                 <img
                   className="ml-3"
                   src={people}
                   alt="people"
                   style={height3}
                 />
-                <a href="#">25/50 Tim</a>
+                <Link to="#">25/50 Tim</Link>
               </div>
             </div>
           </div>
@@ -151,14 +152,14 @@ const MyOwlCarousel = () => {
                   alt="dollar"
                   style={height3}
                 />
-                <a href="#">Rp100.000.000</a>
+                <Link to="#">Rp100.000.000</Link>
                 <img
                   className="ml-3"
                   src={people}
                   alt="people"
                   style={height3}
                 />
-                <a href="#">25/50 Tim</a>
+                <Link to="#">25/50 Tim</Link>
               </div>
             </div>
           </div>

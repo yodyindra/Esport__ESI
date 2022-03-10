@@ -30,9 +30,11 @@ function OpeningScreen1() {
       <main>
         <div class="col-sm-12">
           <div class="content">
-            <div className="text-right mt-4 mb-4">
-              -/*<b>SKIP</b>\+
-            </div>
+            <Link to="/login">
+              <div className="text-right mt-4 mb-4">
+                <b>SKIP</b>
+              </div>
+            </Link>
             <br />
             <div className="wrapper">
               <div>
