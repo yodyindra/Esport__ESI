@@ -1,7 +1,6 @@
 import "./homePage.css";
 import { Link } from "react-router-dom";
 import React from "react";
-import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import wallet from "../Picture/empty-wallet.svg";
@@ -12,9 +11,6 @@ import spaceSquad from "../Picture/space-squad.svg";
 import verifiedBlue from "../Picture/verified-blue.svg";
 import dot from "../Picture/dot.svg";
 import more from "../Picture/more.svg";
-import pubg from "../Picture/PUBGM.svg";
-import dollar from "../Picture/dollar-circle.svg";
-import people from "../Picture/people.svg";
 import rankUp from "../Picture/rank-up.svg";
 import rankSame from "../Picture/rank-same.svg";
 import rankDown from "../Picture/rank-down.svg";
