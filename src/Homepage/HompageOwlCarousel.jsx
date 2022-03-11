@@ -24,7 +24,7 @@ const height5 = {
   height: 50
 };
 
-const MyOwlCarousel = () => {
+const HomepageOwlCarousel = () => {
   const options = {
     loop: true,
     items: 1,
@@ -168,4 +168,4 @@ const MyOwlCarousel = () => {
     </OwlCarousel>
   );
 };
-export default MyOwlCarousel;
+export default HomepageOwlCarousel;

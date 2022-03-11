@@ -15,6 +15,7 @@ import squad from "../Picture/squad.svg";
 import leaderboard from "../Picture/leaderboard.svg";
 import profile from "../Picture/profile.svg";
 import OwlCarouselSquadPage from "./squadPageOwlCarousel";
+import NavBar from "../Navbar/navigationBar";
 
 function HaveSquad() {
   return (
@@ -189,46 +190,14 @@ function HaveSquad() {
           </div>
           {/* Akhir Sparing */}
           {/* Squad lain */}
-          <div class="col-md-12 content mx-auto konten4">
+          <div class="col-md-12 content mx-auto konten4 mb-5">
             <div>
               <div class="mt-5 mb-5 text-center">
                 <Link to="">Temukan Squad Lain</Link>
               </div>
             </div>
           </div>
-          {/* Akhir squad lain */}
-
-          <div className="navs mx-auto mt-2">
-            <div className="card">
-              <div className="card-body">
-                <div className="col-md-6 mx-auto d-flex flex-row justify-content-between">
-                  <Link to="/homepage">
-                    <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
-                  </Link>
-                  <Link to="">
-                    <img
-                      src={tournament}
-                      alt="tournament"
-                      style={{ height: 40 }}
-                    />
-                  </Link>
-                  <Link to="/have-squad">
-                    <img src={squad} alt="squad" style={{ height: 40 }} />
-                  </Link>
-                  <Link to="">
-                    <img
-                      src={leaderboard}
-                      alt="leaderboard"
-                      style={{ height: 40 }}
-                    />
-                  </Link>
-                  <Link to="">
-                    <img src={profile} alt="profile" style={{ height: 40 }} />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <NavBar />
         </main>
       </>
     </>

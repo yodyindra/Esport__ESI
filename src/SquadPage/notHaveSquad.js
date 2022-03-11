@@ -16,6 +16,7 @@ import sad from "../Picture/sad.svg";
 import joinSquad from "../Picture/join-squad.svg";
 import createSquad from "../Picture/create-squad.svg";
 import search from "../Picture/search.svg";
+import NavBar from "../Navbar/navigationBar";
 
 function NotHaveSquad() {
   return (
@@ -23,7 +24,7 @@ function NotHaveSquad() {
       <>
         <main>
           <div
-            class="contain col-md-12 content mx-auto"
+            class="col-md-12 content mx-auto"
             style={{
               background: "linear-gradient(180deg, #a8091e 0%, #ec2028 100%)"
             }}
@@ -34,7 +35,7 @@ function NotHaveSquad() {
                   <img
                     src={chevronLeft}
                     alt="chevronLeft"
-                    style={{ height: "40px" }}
+                    style={{ height: "40px", color: "#ffffff" }}
                   />
                 </Link>
                 <h4 style={{ color: "#ffffff" }}>Squad</h4>
@@ -192,7 +193,7 @@ function NotHaveSquad() {
               <button class="btn">Sparing</button>
             </div>
           </div>
-          <div class="col-md-6 mx-auto mt-5">
+          <div class="col-md-6 mx-auto mt-5 mb-5">
             <div class="d-flex flex-row justify-content-between">
               <div class="d-flex flex-row">
                 <img
@@ -220,39 +221,7 @@ function NotHaveSquad() {
               </button>
             </div>
           </div>
-          <div class="col-md-12 mx-auto mt-5">
-            <div class="card">
-              <div class="card-body">
-                <div class="navs col-md-6 mx-auto">
-                  <div class="col-md-10 mx-auto d-flex flex-row justify-content-between">
-                    <a href="">
-                      <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
-                    </a>
-                    <a href="">
-                      <img
-                        src={tournament}
-                        alt="tournament"
-                        style={{ height: 40 }}
-                      />
-                    </a>
-                    <Link to="/have-squad">
-                      <img src={squad} alt="squad" style={{ height: 40 }} />
-                    </Link>
-                    <a href="">
-                      <img
-                        src={leaderboard}
-                        alt="leaderboard"
-                        style={{ height: 40 }}
-                      />
-                    </a>
-                    <a href="">
-                      <img src={profile} alt="profile" style={{ height: 40 }} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <NavBar />
         </main>
       </>
     </>

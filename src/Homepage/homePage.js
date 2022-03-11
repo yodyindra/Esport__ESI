@@ -21,12 +21,8 @@ import kapakSquad from "../Picture/kapak-squad.svg";
 import rank1 from "../Picture/rank1.svg";
 import rank2 from "../Picture/rank2.svg";
 import rank3 from "../Picture/rank3.svg";
-import homeRed from "../Picture/home-red.svg";
-import tournament from "../Picture/tournament.svg";
-import squad from "../Picture/squad.svg";
-import leaderboard from "../Picture/leaderboard.svg";
-import profile from "../Picture/profile.svg";
-import MyOwlCarousel from "./HompageOwlCarousel";
+import HomepageOwlCarousel from "./HompageOwlCarousel";
+import NavBar from "../Navbar/navigationBar";
 
 const width1 = {
   width: 10
@@ -157,7 +153,7 @@ function Homepage() {
                 <h4>Turnamen</h4>
                 <Link to="/register">Lihat semua</Link>
               </div>
-              <MyOwlCarousel />
+              <HomepageOwlCarousel />
             </div>
           </div>
           <div>
@@ -309,7 +305,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="col-md-6 mx-auto mt-2">
+          <div className="col-md-6 mx-auto mt-2 mb-5">
             <div className="card">
               <div className="card-body d-flex flex-row justify-content-between">
                 <div className="d-flex flex-row">
@@ -354,37 +350,7 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="navs mx-auto mt-2">
-            <div className="card">
-              <div className="card-body">
-                <div className="col-md-6 mx-auto d-flex flex-row justify-content-between">
-                  <Link to="/homepage">
-                    <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
-                  </Link>
-                  <Link to="">
-                    <img
-                      src={tournament}
-                      alt="tournament"
-                      style={{ height: 40 }}
-                    />
-                  </Link>
-                  <Link to="/have-squad">
-                    <img src={squad} alt="squad" style={{ height: 40 }} />
-                  </Link>
-                  <Link to="">
-                    <img
-                      src={leaderboard}
-                      alt="leaderboard"
-                      style={{ height: 40 }}
-                    />
-                  </Link>
-                  <Link to="">
-                    <img src={profile} alt="profile" style={{ height: 40 }} />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
+          <NavBar />
         </main>
       </>
     </>
