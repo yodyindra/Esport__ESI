@@ -96,9 +96,9 @@ function HaveSquad() {
                   <h2>Temukan dan tantang squad lain dalam Sparing</h2>
                 </div>
               </div>
-              <a href="">
+              <Link to="">
                 <img src={search} alt="" className="img1" />
-              </a>
+              </Link>
             </div>
           </div>
           {/* Akhir Search */}
@@ -192,39 +192,39 @@ function HaveSquad() {
           <div class="col-md-12 content mx-auto konten4">
             <div>
               <div class="mt-5 mb-5 text-center">
-                <a href="">Temukan Squad Lain</a>
+                <Link to="">Temukan Squad Lain</Link>
               </div>
             </div>
           </div>
           {/* Akhir squad lain */}
 
-          <div className="navs 8 mx-auto mt-2">
+          <div className="navs mx-auto mt-2">
             <div className="card">
               <div className="card-body">
                 <div className="col-md-6 mx-auto d-flex flex-row justify-content-between">
                   <Link to="/homepage">
                     <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
                   </Link>
-                  <a href="">
+                  <Link to="">
                     <img
                       src={tournament}
                       alt="tournament"
                       style={{ height: 40 }}
                     />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="/have-squad">
                     <img src={squad} alt="squad" style={{ height: 40 }} />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <img
                       src={leaderboard}
                       alt="leaderboard"
                       style={{ height: 40 }}
                     />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <img src={profile} alt="profile" style={{ height: 40 }} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

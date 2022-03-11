@@ -68,19 +68,21 @@ function loginScreen() {
               <div class="mt-3 mb-3">
                 <h3>Atau masuk menggunakan</h3>
               </div>
-
-              <div class="d-flex flex-row justify-content-center mt-3 ">
-                <a href="">
-                  <button type="button" class="btn btn_4">
-                    <img src={facebook} />
-                    Facebook
-                  </button>
-                </a>
-                <a href="">
-                  <button type="button" class="btn btn_5 ml-3">
-                    <img src={google} /> Google
-                  </button>
-                </a>
+              <div class="col-md-3 mx-auto">
+                <div class="d-flex flex-row justify-content-around mt-3 ">
+                  <Link to="">
+                    <div class="d-flex flex-row img__login mr-2">
+                      <img src={facebook} alt="" />
+                      Facebook
+                    </div>
+                  </Link>
+                  <Link to="">
+                    <div class="d-flex flex-row img__login ml-2">
+                      <img src={google} alt="" />
+                      Google
+                    </div>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

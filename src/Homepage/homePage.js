@@ -159,7 +159,7 @@ function Homepage() {
             <div className="col-md-6 mx-auto mt-4">
               <div className="d-flex flex-row justify-content-between">
                 <h4>Turnamen</h4>
-                <a href="/register">Lihat semua</a>
+                <Link to="/register">Lihat semua</Link>
               </div>
               <MyOwlCarousel />
             </div>
@@ -358,33 +358,33 @@ function Homepage() {
               </div>
             </div>
           </div>
-          <div className="navs col-md-6 mx-auto mt-2">
+          <div className="navs mx-auto mt-2">
             <div className="card">
               <div className="card-body">
-                <div className="col-md-10 mx-auto d-flex flex-row justify-content-between">
-                  <a href="">
+                <div className="col-md-6 mx-auto d-flex flex-row justify-content-between">
+                  <Link to="/homepage">
                     <img src={homeRed} alt="homeRed" style={{ height: 40 }} />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <img
                       src={tournament}
                       alt="tournament"
                       style={{ height: 40 }}
                     />
-                  </a>
+                  </Link>
                   <Link to="/have-squad">
                     <img src={squad} alt="squad" style={{ height: 40 }} />
                   </Link>
-                  <a href="">
+                  <Link to="">
                     <img
                       src={leaderboard}
                       alt="leaderboard"
                       style={{ height: 40 }}
                     />
-                  </a>
-                  <a href="">
+                  </Link>
+                  <Link to="">
                     <img src={profile} alt="profile" style={{ height: 40 }} />
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
